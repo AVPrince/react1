@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, React!</title>
+    <title>Hello, React! (NO JSX)</title>
 </head>
 <body>
 
-<!-- element where application will be rendered -->
+<!-- 1. element where application will be rendered (empty element) -->
 <div id="root"></div>
-<!-- React Library -->
+<!-- 2. React Library -->
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<!-- Render -->
+<!-- 3. Render -->
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
 <script>
+    // 4. react element
     let element = React.createElement('h1', null, 'Hello, React!');
+    // 5. Actually want to render on the page
     ReactDOM.render(
         element,
         document.getElementById('root')
